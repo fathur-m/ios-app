@@ -26,7 +26,7 @@ class NewsApi: ObservableObject {
     @Published var news: [Article] = []
     
     func fetchNews() {
-        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=id&apiKey=137c90da91bf445ca69e4ec6da799fbb") else {
+        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=id&apiKey=HIDE") else {
             return
         }
         let task = URLSession.shared.dataTask(with: url) {data, _, error in
